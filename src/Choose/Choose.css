@@ -1,0 +1,243 @@
+.choose__all{
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+
+
+.choose {
+    width: 100%;
+    background-color: var(--bgBestProduct);
+    padding: 50px 0px;
+}
+
+.choose__all{
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+
+.choose__1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.choose__1Left {
+    width: 40%;
+    align-self: center;
+}
+
+.choose__1Left h1 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.choose__1Right {
+    width: 60%;
+    padding: 0px 0px 0px 50px;
+    font-size: 20px;
+    color: rgb(150, 150, 150);
+    font-weight: 500;
+}
+
+.choose_cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.choose__card {
+    width: 100%;
+    transition: all 500ms;
+
+}
+
+.choose__card:hover {
+    transform: scale(1.1);
+    transition: all 500ms;
+}
+
+.choose__image {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.choose__card img {
+    height: 300px;
+    padding: 20px;
+    object-fit: contain;
+    position: relative;
+    z-index: 3;
+}
+
+.choose__bg {
+    width: 100%;
+    max-width: 350px;
+    height: 150px;
+    position: relative;
+    margin-top: -150px;
+    z-index: 1;
+    background-color: var(--bgLightGreen);
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+}
+
+.choose__text {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    row-gap: 10px;
+}
+
+.choose__text h3 {
+    height: 40px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.choose__text strong {
+    font-size: 20px;
+    font-weight: 800;
+    height: 30px;
+}
+
+.choose__text strong>del {
+    color: grey;
+}
+
+.choose__buttons{
+    width: 30%;
+}
+
+
+.choose__btn {
+    width: 80%;
+    align-self: center;
+    justify-self: center;
+    background-color: transparent;
+    padding: 15px 0px;
+    font-weight: 900;
+}
+
+.choose__btn:hover {
+    cursor: pointer;
+    color: var(--bgDarkGreen);
+}
+
+
+.choose__buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.choose__buttons button {
+    padding: 10px 20px;
+    margin: 5px 0px;
+    width: 200px;
+    background-color: transparent;
+    align-self: flex-start;
+    font-size: 18px;
+    border-right: 5px solid;
+    transition: all 500ms;
+}
+
+.choose__buttons .active__btn {
+    background-color: var(--bgButton);
+}
+
+.choose__buttons button:hover {
+    background-color: var(--bgButton);
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .choose__1 {
+        flex-direction: column;
+    }
+
+    .choose__1Left, .choose__1Right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .choose__1Right {
+        padding: 0px;
+        padding-top: 20px;
+    }
+
+    .choose_cards {
+        grid-template-columns: 1fr !important;
+    }
+
+    .choose__buttons {
+        align-self: center;
+        justify-self: center;
+    }
+
+    .choose__buttons button {
+        align-self: center;   
+    }
+
+    .choose_card {
+        align-self: center;
+        justify-self: center;
+        margin: 0px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 1060px) {
+    .choose__buttons button {
+        width: 300px;
+    }
+
+    .choose_cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        margin: 0px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

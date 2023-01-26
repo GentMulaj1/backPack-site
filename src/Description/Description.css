@@ -1,0 +1,212 @@
+.description {
+    width: 100%;
+    height: 100vh;
+}
+
+.description__up {
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+
+.description__upLeft {
+    width: 50%;
+    height: 100%;
+    background-color: var(--bgLightGreen);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description__upLeft img {
+    width: 50%;
+    object-fit: contain;
+}   
+
+.description__upRight {
+    width: 50%;
+    height: 100%;
+    background-color: var(--bgDarkGreen);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    padding-left: 100px;
+    row-gap: 20px;
+    color: white;
+}
+
+.description__upRight p {
+    font-size: 20px;
+    color: rgb(150, 150, 150);
+    font-weight: 500;
+}
+
+.description__upRight button {
+    background-color: transparent;
+    outline: none;
+    border-color: var(--bgYellow);
+    color: var(--bgYellow);
+    padding: 10px 20px;
+    border-right: 5px solid;
+    transition: all 500ms;
+}
+
+.description__upRight button:hover {
+    transform: scale(1.1);
+    transition: all 500ms;
+    color: white;
+    cursor: pointer;
+}
+
+.description__upLeft .mid {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    left: 25%;
+    border-radius: 50%;
+    background-color: var(--bgYellow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}   
+
+
+
+.description__down {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 50vh;
+}
+
+.description__downRight {
+    width: 50%;
+    height: 100%;
+    background-color: var(--bgDarkGreen);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    padding-left: 100px;
+    row-gap: 20px;
+    color: white;
+}
+
+.description__downRight p {
+    font-size: 20px;
+    color: rgb(150, 150, 150);
+    font-weight: 500;
+}
+
+.description__downRight button {
+    background-color: transparent;
+    outline: none;
+    border-color: var(--bgYellow);
+    color: var(--bgYellow);
+    padding: 10px 20px;
+    border-right: 5px solid;
+    transition: all 500ms;
+}
+
+.description__downRight button:hover {
+    transform: scale(1.1);
+    transition: all 500ms;
+    color: white;
+    cursor: pointer;
+}
+
+.description__downLeft {
+    width: 50%;
+    height: 100%;
+    background-color: var(--bgLightGreen);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description__downLeft img {
+    padding-left: 100px;
+    width: 50%;
+    object-fit: contain;
+}   
+
+.description__downLeft .mid {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    right: 75%;
+    border-radius: 50%;
+    background-color: var(--bgYellow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.description > div > div:hover {
+    color: var(--bgLightGreen);
+    transition: all 500ms;
+} 
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .description__up {
+        width: 100%;
+    }
+
+    .description {
+        height: auto;
+    }
+
+    .description__up {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .description__down {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .description__upLeft, .description__upRight {
+        width: 100%;
+        height: auto;
+        padding: 30px 10px;
+    }
+
+    .description__downLeft, .description__downRight {
+        width: 100%;
+        height: auto;
+        padding: 30px 10px;
+    }
+
+    .description__upLeft .mid {
+        display: none;
+    }
+
+    .description__downLeft .mid {
+        display: none;
+    }
+
+    .description__upLeft img, .description__downLeft img {
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 1600px ) {
+    .description__downLeft img {
+        padding-left: 100px;
+        height: 450px;
+        object-fit: contain;
+    }
+}
